@@ -1,0 +1,139 @@
+/* initail setup */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    overflow-x: hidden;
+}
+
+main{
+    height: 100vh;
+}
+
+/* Common classes */
+.flex{
+    display: flex;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.items-end{
+    align-items: end;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+.gap{
+    gap: 10px;
+}
+.w-fit{
+    width: fit-content;
+}
+
+
+
+
+.sidebarSection{
+    padding: 15px;
+    gap: 45px;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    width: 15%;
+    height: 100%;
+    z-index: 50;
+}
+
+.sidebarSection > div{
+    gap: 15px;
+}
+
+.main-dashboard{
+    width: 85%;
+    padding: 15px;
+}
+
+
+.mood-card-container{
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 25px 0;
+}
+
+.header-music-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 0;
+}
+
+
+.header-music-card > p{
+    color: rgb(0, 255, 208);
+    cursor: pointer;
+    
+}
+.playlist-card-container{
+    padding-top: 15px;
+}
+
+.single-mood-card {
+    font-size: 1.25em;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 25px;
+    background-color: rgba(0, 0, 0, 0.258);
+    width: 30.5%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-music-container{
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.music-card{
+    background-color: black;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    background-color: black;
+    padding: 17px 10px;
+    box-shadow: inset 0px 2px 5px 2px rgba(245, 222, 179, 0.473);
+    z-index: 99;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

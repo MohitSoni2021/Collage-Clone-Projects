@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    background-image: url('/assets/Title-Image.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-color: #141414;
+}
+
+.text-sm{
+    font-size: small;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.items-end{
+    align-items: end;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-end{
+    justify-content: end;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.gap-10{
+    gap: 10px;
+}
+
+.d-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-white{
+    color: white;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+.my-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.py-auto{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.px-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+
+.bg-test{
+    background-color: #F5F5F5;
+}
+.gap-20{
+    gap: 20px;
+}
+.ptf-25{
+    padding-top: 30px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 15px;
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    padding-right: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight-info{
+    margin-top: 300px;
+    margin-left: 25px;
+}
+
+.highlight-info > div:first-child{
+    margin-left: 10px;
+}
+
+.highlight-info h1{
+    font-size: 7em;
+    padding: 0;
+    margin: 0;
+}
+
+.highlight-info button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+        
+}
+
+.highlight-info button:first-child{
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 6px;
+}
+
+.highlight-info button:last-child{
+    background-color: rgba(255, 255, 255, 0.426);
+    backdrop-filter: blur(2px);
+}
+
+.move-card-container-outer{
+    padding:  25px 55px;
+}
+
+.btn{
+    padding: 12px;
+    width: fit-content;
+    border: 2px solid gray;
+    border-radius: 3px;
+    background-color: transparent;
+    color: gray;
+    
+}
+
+footer{
+    padding: 35px 0;
+}

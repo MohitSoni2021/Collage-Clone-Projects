@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.icon-height{
+    height: 25px;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.items-end{
+    align-items: end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.flex-column{
+    flex-direction: column;
+}
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.-top-10{
+    top: -10px;
+}
+
+.small-text{
+    font-size: 0.8em;
+}
+
+.gap{
+    gap: 10px;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.d-font{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.search-option-upper-nav{
+    background-color: #121921;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 8px;
+}
+.searchbar-container{
+    width: 40%;
+}
+.searchbar-container > select{
+    width: 8%;
+    padding: 9px 0;
+    height: 100%;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    border-right: 1px solid black;
+}
+.searchbar-container input{
+    width: 85%;
+    height: 35px;
+    border: none;
+}
+.searchbar-container > div{
+    width: 7%;
+    aspect-ratio: 1/1;
+    height: 35px;
+    background-color: rgb(89, 255, 0);
+    border-radius: 0px 5px 5px 0;
+}
+
+.search-option-lower-nav{
+    background-color: #243040;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.search-option-lower-nav{
+    padding: 10px 15px;
+}
+
+.arrow-container{
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.155);
+}
+
+main{
+    background-image: url('./assets/background\ picture.png');
+    height: 95vh;
+}
+
+.products-container-outer{
+    background-color: aliceblue;
+    width: 364px;
+}
+.product-card{
+    width: 364px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.product-card3{
+    width: 250px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+.signin-securely{
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-weight: bolder;
+    gap: 15px;
+}
+
+.signin-securely > button {
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: yellow;
+}
+

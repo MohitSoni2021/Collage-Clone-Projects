@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudoko</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cell{
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.381);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .row-outer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: fit-content;
+        border: 2px solid black;
+    }
+    .sudoko-board{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: fit-content;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    
+
+    <div class="sudoko-board">
+        <div class="row-outer">
+            <div class="cell cell-q">8</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">6</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">4</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">2</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">3</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">1</div>
+            <div class="cell cell-q">8</div>
+            <div class="cell cell-q">7</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">9</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">6</div>
+            <div class="cell cell-q">8</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">5</div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q">1</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">8</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">3</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">7</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">5</div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">5</div>
+            <div class="cell cell-q">1</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">3</div>
+            <div class="cell cell-q"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">2</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">5</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">9</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">2</div>
+            <div class="cell cell-q">1</div>
+            <div class="cell cell-q">6</div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q">8</div>
+            <div class="cell cell-q">7</div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+            <div class="cell cell-q"></div>
+        </div>
+    </div>
+
+
+    <div class="sudoko-board">
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+            <div class="cell cell-s"></div>
+        </div>
+        <div class="row-outer">
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+            <div class="cell cells"></div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="/app.js"></script>
+
+</html>
